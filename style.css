@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #3efffc;
+}
+
+* {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  width: 40%;
+  margin: auto;
+}
+
+button,
+input {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.donts {
+  color: red;
+}
+
+.comments {
+  font-weight: bolder;
+}
