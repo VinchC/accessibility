@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #000000;
-  --secondary-color: #3efffc;
+  --primary-color: black;
+  --secondary-color: lightgrey;
 }
 
 * {
@@ -13,12 +13,12 @@ body {
   margin: auto;
 }
 
-section {
+/* section {
   display: flex;
-}
+} */
 
 article {
-  width: 40%;
+  width: 90%;
   margin: auto;
 }
 
