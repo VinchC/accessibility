@@ -1,11 +1,12 @@
 :root {
   --primary-color: black;
-  --secondary-color: lightgrey;
-  --tertiary-color: darkgreen;
+  --secondary-color: #d3d3d3;
+  --tertiary-color: #006400;
 }
 
 body {
   background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .navbar,
@@ -24,7 +25,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 
 .bg-light {
   --bs-bg-opacity: 1;

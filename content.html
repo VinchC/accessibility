@@ -4,17 +4,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta
-      description="A page to work on good pracyices regarding the topic of web accessibility."
+      description="A page to work on good practices regarding the topic of web accessibility."
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
     <title>Accessibility</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
-    </header>
     <main>
       <h1>A few good practices regarding web accessibility</h1>
 
@@ -44,8 +40,8 @@
 
           <p class="comments">
             Screen readers don't understand this (div ? class ?)
+            div class="btn donts">Add - BAD PRACTICE
           </p>
-          div class="btn donts">Add - BAD PRACTICE
 
           <p>
             type="button" should be used whenever an action is performed on an
@@ -57,7 +53,10 @@
 
           <p>type="submit" should be used to validate a form.</p>
           <button type="submit">Validate the form</button>
+        </article>
 
+        <article>
+          <h4>Forms</h4>
           <p>
             Use different id and labels to differentiate them from the others.
           </p>
@@ -69,6 +68,7 @@
 
         <article>
           <h4>Links</h4>
+          <p>Must be the only tags used for navigation</p>
           <p>
             <a
               href="https://www.w3.org/WAI/standards-guidelines/wcag/fr"
