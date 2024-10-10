@@ -18,6 +18,8 @@
   </head>
   <body>
     <header>
+      <!-- the link must be the first element of the body, it is detected by the screen reader and enables to navigate directly to a part thanks to a specific id -->
+      <a href="#maincontent" class="skip">Skip to main content</a>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Logo</a>
         <button
@@ -75,11 +77,15 @@
         </div>
       </nav>
     </header>
-    <main>
+
+    <!-- destination of the skip navigation link -->
+    <main id="maincontent">
       <h1>To do list</h1>
       <ul>
-        <li>Skip navigation link</li>
-        <li>Slider</li>
+        <li><a href="#">Skip navigation link</a></li>
+        <li><a href="#">Checkbox for tasks done</a></li>
+        <li><a href="#">Change the size of the element</a></li>
+        <li><a href="#">Slider</a></li>
         <li>Day / night mode</li>
         <li>SearchBar</li>
         <li>Card that will display content on user action</li>
