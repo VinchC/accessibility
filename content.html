@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- allows to choose a language depending on the public targeted by the website. Has an impact on the pronunciation of the content by screen readers -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      description="A page to work on good pracyices regarding the topic of web accessibility."
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <h1>A few good practices regarding web accessibility</h1>
+
+      <h2>Including some dos and don'ts</h2>
+
+      <h3>Includes advice, tools, semantics and more !</h3>
+
+      <section>
+        <article>
+          <h4>Content description</h4>
+          <p>
+            Content must be described as precisely as possible, an "array" doesn't provide any information about the content. 
+          </p>
+        </article>
+
+        <article>
+          <h4>Buttons</h4>
+          <p>
+            Buttons are CTAs and must not be used for navigation, only to
+            interact with an element or submit a form.
+          </p>
+          <p>
+            It is important to be as accurate as possible regarding the text
+            inside the CTA elements (Validate != Validate the form) and the
+            links (link != link to website content page)
+          </p>
+
+          <p class="comments">
+            Screen readers don't understand this (div ? class ?)
+          </p>
+          div class="btn donts">Add - BAD PRACTICE
+
+          <p>
+            type="button" should be used whenever an action is performed on an
+            element (including creation, animation)
+          </p>
+          <button type="button">
+            Update / Create / Delete / Interact with an element
+          </button>
+
+          <p>type="submit" should be used to validate a form.</p>
+          <button type="submit">Validate the form</button>
+
+          <p>
+            Use different id and labels to differentiate them from the others.
+          </p>
+          <label for="firstname">Enter your firstname</label>
+          <input type="text" id="firstname" />
+          <label for="lastname">Enter your lastname</label>
+          <input type="text" id="lastname" />
+        </article>
+
+        <article>
+          <h4>Links</h4>
+          <p>
+            <a
+              href="https://www.w3.org/WAI/standards-guidelines/wcag/fr"
+              target="_blank"
+              >Link</a
+            >
+            to the standard WCAG rules
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h4>Languages</h4>
+
+          <p>
+            Allows to pronounce a quote with the adequate accent, not with the
+            one indicated on top of the DOM.
+          </p>
+
+          <blockquote lang="fr">
+            <!-- content will be read by screen readers with the French accent -->
+            <p>Il était une fois sur le web</p>
+          </blockquote>
+
+          <blockquote lang="es">
+            <!-- content will be read with the Spanish accent -->
+            <p>Hola amigo !</p>
+          </blockquote>
+        </article>
+
+        <article>
+          <h4>Semantics</h4>
+          <p>
+            Use as many HTML tags as possible and avoid div to optimize the tab
+            navigation.
+          </p>
+          <p>
+            Allows the website to be browsed correctly by robots - which is a
+            good practice for SEO.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h4>Focus</h4>
+          <button type="button">Add a product</button>
+          <p>
+            Tag tabindex allows to remove a tag from the tab navigation -
+            utility !??
+          </p>
+          <button tabindex="-1" type="button">Update a product</button>
+          <button type="button">Remove a product</button>
+        </article>
+
+        <article>
+          <h4>Pictures</h4>
+          <figure>
+            <img src="" alt="description of the picture" />
+            <figcaption>
+              The description of the picture must be as accurate as possible to
+              enable reading by screen readers.
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h4>Title tags</h4>
+          <p>
+            Use the correct hierarchy of the HTML tags (h1 (one only) > h2 (two
+            max) > h3 (three or four) etc.)
+          </p>
+        </article>
+
+        <article>
+          <h4>Color contrast</h4>
+          <p>
+            Screen should be readable at all times, by everybody, whatever the
+            time of day or night, light etc.
+          </p>
+          <p>
+            This
+            <a href="https://colorable.jxnblk.com/" target="_blank"></a>website
+            allows to grade the contrast between colors and lightness parameter.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h4>Lighthouse Evaluation Tool</h4>
+          <p>
+            A tool accessible via the Web inspector that allows to analyze a
+            website on some criteria including accessibility, performances, SEO
+            and good practices in general.
+          </p>
+        </article>
+
+        <article>
+          <h4>Skip navigation link</h4>
+          <p>
+            Allows to skip the content of the menu to access directly to the page content.
+          </p>
+        </article>
+
+        <article>
+          <h4>Agendas</h4>
+          <p>
+            Agendas are tricky because they include a lot of element that must be accurately identified and clearly state the dates of beginning and end.
+          </p>
+        </article>
+
+        <article>
+          <h4>Pop up windows</h4>
+          <p>
+            If the pop-up is not designed correctly, it will be impossible for a screen reader to read it!
+          </p>
+        </article>
+
+        <article>
+          <h4>Forms</h4>
+          <p>
+            Forms may have a particular format expected for some fields (birthdate, phone number...), the error messages must be accurate and accessible to the user for each case.
+          </p>
+        </article>
+
+        <article>
+          <h4>.........</h4>
+          <p>
+            ........
+          </p>
+        </article>
+
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
